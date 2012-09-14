@@ -1,6 +1,26 @@
 #!/usr/bin/python
-'''Clean out Amazon inserted tracking metadata from mp3 files.
-This requires the eyeD3 library available at http://http://eyed3.nicfit.net.
+#
+# Copyright (C) 2012 Chris Gordon
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+'''
+Clean out certain data inserted into ID3 tags. Specifically this will remove
+any Comments tags, either ID3 v1 or ID3 v2 and ID3 v2 PRIV frames.
+
+The eyeD3 library available at http://http://eyed3.nicfit.net is required.
 '''
 
 import eyeD3
